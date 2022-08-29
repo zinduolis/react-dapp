@@ -3,7 +3,8 @@ import { ethers } from 'ethers'
 import './App.css';
 import Greeter from './artifacts/contracts/Greeter.sol/Greeter.json'
 
-const greeterAddress = "0x5fbdb2315678afecb367f032d93f642f64180aa3"
+// localhost const greeterAddress = "0x5fbdb2315678afecb367f032d93f642f64180aa3"
+const greeterAddress = "0x9Ddd4C47B17852fB41fd8f29510bD0c4810F097E" //ropsten
 
 function App() {
   const [greeting, setGreetingValue] = useState('')
@@ -13,9 +14,12 @@ function App() {
   }
 
   async function fetchGreeting() {
+    // console.log('fetchGreeting')
+    // console.log(typeof window.ethereum !== 'undefined')
     if (typeof window.ethereum !== 'undefined') {
       const provider = new ethers.providers.Web3Provider(window.ethereum)
       const contract = new ethers.Contract(greeterAddress, Greeter.abi, provider)
+ //     console.log('provider', provider)
       try {
         const data = await contract.greet()
         console.log('data: ', data)
@@ -26,8 +30,11 @@ function App() {
   }
 
   async function setGreeting() {
+  //  console.log('setGreeting')
     if (!greeting) return
+ //   console.log(greeting)
     if (typeof window.ethereum !== 'undefined') {
+    //  console.log('setGreeting inside')
       await requestAccount()
       const provider = new ethers.providers.Web3Provider(window.ethereum);
       const signer = provider.getSigner()
