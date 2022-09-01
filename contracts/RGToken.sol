@@ -5,6 +5,6 @@ import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 
 contract RGToken is ERC20 {
     constructor() ERC20("Red Graz Token", "NDT") {
-        _mint(msg.senderm 100000 * (10 ** 18));
+        _mint(msg.sender, 100000 * (10 ** 18));
     }
 }
