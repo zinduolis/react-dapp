@@ -1,4 +1,4 @@
-# As the part of this project, the following was achieved:
+# Achievements
 
 1. Writing the following smart contract with Solidity:
     - For greeting
@@ -8,3 +8,13 @@
 3. Deploying smart contracts to Ropsten through infura
 4. Interacting with smart contracts using React frontend
 5. Writing and deploying smart contracts through remix
+
+# Tech stack
+
+1. Solidity
+2. React
+3. Hardhat
+4. Infura
+5. openzeppelin
+6. Ropsten
+7. Remix
