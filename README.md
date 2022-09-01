@@ -1,13 +1,10 @@
-# Sample Hardhat Project
+As the part of this project, the following was achieved:
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
-
-Try running some of the following tasks:
-
-```shell
-npx hardhat help
-npx hardhat test
-GAS_REPORT=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.ts
-```
+Writing the following smart contract with Solidity:
+    For greeting
+    For a custome token
+    For a custom token using ERC20 standard
+Running hardhat local network and deploying smart contracts on it
+Deploying smart contracts to Ropsten through infura
+Interacting with smart contracts using React frontend
+Writing and deploying smart contracts through remix
