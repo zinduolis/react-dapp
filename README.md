@@ -1,3 +1,7 @@
+# Overview
+
+1. Smart contracts and React frontend for greetings and token transfers
+
 # Achievements
 
 1. Writing the following smart contract with Solidity:
